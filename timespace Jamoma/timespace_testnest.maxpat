@@ -7,7 +7,7 @@
 			"revision" : 7
 		}
 ,
-		"rect" : [ 424.0, 44.0, 692.0, 539.0 ],
+		"rect" : [ 424.0, 44.0, 862.0, 750.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -118,14 +118,15 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 345.0, 345.0, 306.0, 208.0 ],
-					"text" : "Interlace: a value of 0 leaves the video stream as progressive. A value of 1 discards every other horizontal line of every other frame, halving processing requirements. Values higher than 1 produce psychedelic visuals.\n\nInvert: if switched off, black regions of the time mask index pixels closest to the present, while white regions index the oldest pixels in the buffer. If switched on, this relation is reversed, with black regions retrieving the oldest pixels and white regions getting the newest.\n\nIf invert is switched off, tiime will seem to flow from dark to bright regions. If switched on, it appears to flow from bright to dark."
+					"patching_rect" : [ 345.0, 345.0, 313.0, 208.0 ],
+					"text" : "Invert: if switched off, black regions of the time mask index pixels closest to the present, while white regions index the oldest pixels in the buffer. If switched on, this relation is reversed, with black regions retrieving the oldest pixels and white regions getting the newest.\n\nIf invert is switched off, tiime will seem to flow from dark to bright regions. If switched on, it appears to flow from bright to dark.\n\nInterlace: a value of 0 leaves the video stream as progressive. A value of 1 discards every other horizontal line of every other frame, halving processing requirements. Values higher than 1 produce psychedelic visuals."
 				}
 
 			}
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
+					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -513,14 +514,14 @@
 			}
 , 			{
 				"name" : "jmod.timespace_minimal%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/ACTIVE/timespace Jamoma",
+				"bootpath" : "/Users/ILYA/Git/ilya_active/timespace Jamoma",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.timespace_minimal%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/ACTIVE/timespace Jamoma",
+				"bootpath" : "/Users/ILYA/Git/ilya_active/timespace Jamoma",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
@@ -534,14 +535,14 @@
 			}
 , 			{
 				"name" : "jmod.bfg%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/ACTIVE/timespace Jamoma",
+				"bootpath" : "/Users/ILYA/Git/ilya_active/timespace Jamoma",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.bfg%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/ACTIVE/timespace Jamoma",
+				"bootpath" : "/Users/ILYA/Git/ilya_active/timespace Jamoma",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
