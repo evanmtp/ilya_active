@@ -28,6 +28,17 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-1",
+					"maxclass" : "jit.pwindow",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1365.0, 165.0, 315.0, 120.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-148",
@@ -36,7 +47,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "" ],
 					"patching_rect" : [ 465.0, 540.0, 52.0, 20.0 ],
-					"presentation_rect" : [ 459.61499, 551.979004, 0.0, 0.0 ],
 					"text" : "jit.xfade"
 				}
 
@@ -53,8 +63,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "float", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 435.0, 450.0, 50.0, 20.0 ],
-					"presentation_rect" : [ 429.61499, 446.979004, 0.0, 0.0 ]
+					"patching_rect" : [ 435.0, 450.0, 50.0, 20.0 ]
 				}
 
 			}
@@ -68,7 +77,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 435.0, 480.0, 57.0, 18.0 ],
-					"presentation_rect" : [ 429.61499, 476.979004, 0.0, 0.0 ],
 					"text" : "xfade $1"
 				}
 
@@ -333,7 +341,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 885.0, 150.0, 18.0 ],
-					"text" : "/reset 0"
+					"text" : "/vorticity 2."
 				}
 
 			}
@@ -4472,6 +4480,15 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-1", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-79", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-117", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -4666,7 +4683,14 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jmod.tml.fluids%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/2013_10_08_ilya",
+				"bootpath" : "/Users/ILYA/Desktop/Git/ilya_active/particles_and_fluids",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jmod.tml.fluids%.ui.panel.maxpat",
+				"bootpath" : "/Users/ILYA/Desktop/Git/ilya_active/particles_and_fluids",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4674,20 +4698,27 @@
 , 			{
 				"name" : "jcom.list2parameter.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/list2parameter",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/library/components/list2parameter",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/list2parameter",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "tml.ejm.bilogscaler.maxpat",
+				"bootpath" : "/Users/ILYA/Desktop/Git/ilya_active/particles_and_fluids",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.parameterCreate.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/parameterCreate",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/library/components/parameterCreate",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/parameterCreate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.tml.fluids%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/2013_10_08_ilya",
+				"bootpath" : "/Users/ILYA/Desktop/Git/ilya_active/particles_and_fluids",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
@@ -4695,62 +4726,62 @@
 , 			{
 				"name" : "jmod.input%.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.thru.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/thru",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/library/components/thru",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/thru",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.ui.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.brcosa%.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/brcosa%",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/brcosa%",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/brcosa%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.brcosa%.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/brcosa%",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/brcosa%",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/brcosa%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.pwindow.mouse.maxpat",
 				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/pwindow.mouse",
-				"patcherrelativepath" : "../../../../Applications/Max6/Cycling '74/Jamoma/library/components/pwindow.mouse",
+				"patcherrelativepath" : "../../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/pwindow.mouse",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.tml.budgetparticles%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/2013_10_08_ilya",
+				"bootpath" : "/Users/ILYA/Desktop/Git/ilya_active/particles_and_fluids",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.tml.budgetparticles%.maxpat",
-				"bootpath" : "/Users/ILYA/Desktop/2013_10_08_ilya",
+				"bootpath" : "/Users/ILYA/Desktop/Git/ilya_active/particles_and_fluids",
 				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1

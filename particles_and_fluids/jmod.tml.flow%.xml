@@ -5,9 +5,32 @@
 		xsi:schemaLocation='http://jamoma.org/ file:jamoma.xsd'
 >
   <preset number='1' name='default'>
-    <item name='a_bang' type='generic' priority='1' mixweight='1'>0</item>
     <item name='attraction' type='array' priority='0' mixweight='1'>0</item>
     <item name='attractionVel' type='array' priority='0' mixweight='1'>0.160000 0.160000 0.160000 0.160000 </item>
+    <item name='layer0/color' type='array' priority='0' mixweight='1'>0.000000 1.000000 1.000000 1.000000 </item>
+    <item name='layer0/draw_mode' type='integer' priority='0' mixweight='1'>2</item>
+    <item name='layer0/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer0/point_size' type='decimal' priority='0' mixweight='1'>1.000000</item>
+    <item name='layer0/position' type='array' priority='0' mixweight='1'>0</item>
+    <item name='layer0/scale' type='array' priority='0' mixweight='1'>1.000000 1.000000 0.000000 </item>
+    <item name='layer1/color' type='array' priority='0' mixweight='1'>0.000000 1.000000 1.000000 1.000000 </item>
+    <item name='layer1/draw_mode' type='integer' priority='0' mixweight='1'>2</item>
+    <item name='layer1/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer1/point_size' type='decimal' priority='0' mixweight='1'>1.000000</item>
+    <item name='layer1/position' type='array' priority='0' mixweight='1'>0</item>
+    <item name='layer1/scale' type='array' priority='0' mixweight='1'>1.000000 1.000000 0.000000 </item>
+    <item name='layer2/color' type='array' priority='0' mixweight='1'>1.000000 1.000000 1.000000 1.000000 </item>
+    <item name='layer2/draw_mode' type='integer' priority='0' mixweight='1'>2</item>
+    <item name='layer2/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer2/point_size' type='decimal' priority='0' mixweight='1'>0</item>
+    <item name='layer2/position' type='array' priority='0' mixweight='1'>0</item>
+    <item name='layer2/scale' type='array' priority='0' mixweight='1'>1.000000 1.000000 0.000000 </item>
+    <item name='layer3/color' type='array' priority='0' mixweight='1'>1.000000 1.000000 1.000000 1.000000 </item>
+    <item name='layer3/draw_mode' type='integer' priority='0' mixweight='1'>2</item>
+    <item name='layer3/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer3/point_size' type='decimal' priority='0' mixweight='1'>1.000000</item>
+    <item name='layer3/position' type='array' priority='0' mixweight='1'>0</item>
+    <item name='layer3/scale' type='array' priority='0' mixweight='1'>1.000000 1.000000 0.000000 </item>
     <item name='maxDampening' type='array' priority='0' mixweight='1'>1.000000 1.000000 1.000000 1.000000 </item>
     <item name='maxMass' type='array' priority='0' mixweight='1'>10.000000 10.000000 10.000000 10.000000 </item>
     <item name='minDampening' type='array' priority='0' mixweight='1'>1.000000 1.000000 1.000000 1.000000 </item>
