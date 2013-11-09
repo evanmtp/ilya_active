@@ -3,12 +3,11 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 3,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 7
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 263.0, 46.0, 1280.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -121,7 +120,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 225.0, 420.0, 150.0, 88.0 ],
+					"patching_rect" : [ 225.0, 420.0, 150.0, 87.0 ],
 					"text" : "vorticity 5\ntimesetep -1. 10\ngravityAngle - 0. 6.28\ngravityMagnitude - 0. 1.\ndensityblend -1.05 1\nvelocityblend 0 1"
 				}
 
@@ -175,7 +174,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 795.0, 555.0, 150.0, 88.0 ],
+					"patching_rect" : [ 795.0, 555.0, 150.0, 87.0 ],
 					"text" : "modes:\n\npegged to normalized values\nconstrained\nnoise"
 				}
 
@@ -668,106 +667,134 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jmod.input%.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
+				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
+				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.thru.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/library/components/thru",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/library/components/thru",
+				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/thru",
+				"patcherrelativepath" : "../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/thru",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.ui.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
+				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.tml.fluids%.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.tml.fluids%.ui.panel.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.list2parameter.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/library/components/list2parameter",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/library/components/list2parameter",
+				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/list2parameter",
+				"patcherrelativepath" : "../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/list2parameter",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tml.ejm.bilogscaler.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.parameterCreate.maxpat",
-				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/library/components/parameterCreate",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/library/components/parameterCreate",
+				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/parameterCreate",
+				"patcherrelativepath" : "../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/parameterCreate",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.tml.fluids%.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.tml.flow%.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.tml.flow%.ui.panel.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.tml.flow%.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "tml.flow.particlemesh.maxpat",
 				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jalg.tml.flow%.initialPositions.maxpat",
+				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jalg.tml.flow%.noisefield.maxpat",
+				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jalg.tml.flow%.normals.maxpat",
+				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
+				"patcherrelativepath" : "",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jalg.tml.flow%.figurative.maxpat",
+				"bootpath" : "/Volumes/5149373127/Git/ilya_active/particles_and_fluids",
+				"patcherrelativepath" : "",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "mxr.v.scalewrap.maxpat",
-				"bootpath" : "/Applications/Max 6.1/externals/MaxLibraries/MXR/Abstractions/visuals/others",
-				"patcherrelativepath" : "../../../../../Applications/Max 6.1/externals/MaxLibraries/MXR/Abstractions/visuals/others",
+				"bootpath" : "/Users/ILYA/MaxLibraries/MXR/Abstractions/visuals/others",
+				"patcherrelativepath" : "../../../../../Users/ILYA/MaxLibraries/MXR/Abstractions/visuals/others",
 				"type" : "JSON",
 				"implicit" : 1
 			}

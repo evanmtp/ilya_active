@@ -30,6 +30,68 @@
 		"tags" : "",
 		"boxes" : [ 			{
 				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.2896,
+					"id" : "obj-4",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 90.0, 810.400024, 42.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 45.0, 270.0, 42.0, 19.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 11.2896,
+					"id" : "obj-5",
+					"maxclass" : "number",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "int", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 45.0, 810.400024, 42.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 0.0, 270.0, 42.0, 19.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 11,
+					"numoutlets" : 11,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
+					"patching_rect" : [ 45.0, 765.0, 154.0, 19.0 ],
+					"text" : "jcom.list2parameter 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-9",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 225.0, 765.0, 558.0, 31.0 ],
+					"text" : "jcom.parameter #1/meshDim @type array @range/clipmode none @range/bounds 0. 1. @repetitions/allow 0 @ramp/drive none @description Dimensions of #1",
+					"varname" : "attractionVel[1]"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"annotation" : "Iniitial positions for layer0",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
@@ -187,7 +249,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 225.0, 480.0, 544.0, 31.0 ],
-					"text" : "jcom.parameter #1/scale @type array @range/clipmode none @range/bounds 0. 1. @repetitions/allow 0 @ramp/drive none @description Scale layer #1",
+					"text" : "jcom.parameter #1/scale @type array @range/clipmode none @range/bounds 0. 1. @repetitions/allow 0 @ramp/drive none @description Scale #1",
 					"varname" : "attractionVel[5]"
 				}
 
@@ -220,7 +282,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 165.0, 105.0, 594.0, 31.0 ],
-					"text" : "jcom.parameter #1/point_size @type decimal @range/bounds 0. 30. @range/clipmode both @repetitions/allow 0 @ramp/drive none @description Sets point size for mesh layer #1",
+					"text" : "jcom.parameter #1/point_size @type decimal @range/bounds 0. 30. @range/clipmode both @repetitions/allow 0 @ramp/drive none @description Sets point size for mesh #1",
 					"varname" : "point_size[3]"
 				}
 
@@ -298,7 +360,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 225.0, 600.0, 558.0, 31.0 ],
-					"text" : "jcom.parameter #1/position @type array @range/clipmode none @range/bounds 0. 1. @repetitions/allow 0 @ramp/drive none @description Position layer #1",
+					"text" : "jcom.parameter #1/position @type array @range/clipmode none @range/bounds 0. 1. @repetitions/allow 0 @ramp/drive none @description Position #1",
 					"varname" : "attractionVel[2]"
 				}
 
@@ -387,7 +449,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 225.0, 315.0, 548.0, 19.0 ],
-					"text" : "jcom.parameter #1/color @type array @ramp/drive none @description Sets mesh color for layer #1",
+					"text" : "jcom.parameter #1/color @type array @ramp/drive none @description Sets mesh color for #1",
 					"varname" : "dim[1]"
 				}
 
@@ -870,6 +932,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 1 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 99.5, 841.0, 30.0, 841.0, 30.0, 750.0, 68.0, 750.0 ],
+					"source" : [ "obj-4", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-126", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -888,6 +960,16 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-8", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 54.5, 836.0, 38.0, 836.0, 38.0, 758.0, 54.5, 758.0 ],
+					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-7", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
@@ -901,6 +983,43 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-7", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-4", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 68.0, 796.5, 99.5, 796.5 ],
+					"source" : [ "obj-8", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-9", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-8", 10 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-8", 10 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-9", 0 ]
 				}
 
 			}
