@@ -3,11 +3,12 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 0,
-			"revision" : 7
+			"minor" : 1,
+			"revision" : 3,
+			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 796.0, 329.0, 1293.0, 706.0 ],
+		"rect" : [ 317.0, 44.0, 1280.0, 706.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -31,13 +32,28 @@
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
+					"id" : "obj-7",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 0,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 540.0, 105.0, 100.0, 31.0 ],
+					"text" : "jcom.parameterCreate"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
 					"id" : "obj-22",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 630.0, 315.0, 210.0, 17.0 ],
-					"text" : "/layer3/color 1. 1. 1. 1."
+					"text" : "/layer1/color 0. 0.533333 0.152381 1."
 				}
 
 			}
@@ -1193,18 +1209,19 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 0,
-							"revision" : 7
+							"minor" : 1,
+							"revision" : 3,
+							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 798.0, 119.0, 1680.0, 904.0 ],
+						"rect" : [ -6.0, 44.0, 675.0, 285.0 ],
 						"bgcolor" : [ 0.86413, 0.86413, 0.86413, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
 						"default_fontface" : 0,
 						"default_fontname" : "Verdana",
-						"gridonopen" : 0,
+						"gridonopen" : 1,
 						"gridsize" : [ 15.0, 15.0 ],
 						"gridsnaponopen" : 0,
 						"statusbarvisible" : 2,
@@ -1220,6 +1237,22 @@
 						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
+									"fontname" : "Verdana",
+									"fontsize" : 12.0,
+									"frgb" : 0.0,
+									"id" : "obj-5",
+									"maxclass" : "comment",
+									"numinlets" : 1,
+									"numoutlets" : 0,
+									"patching_rect" : [ 15.0, 360.0, 105.0, 21.0 ],
+									"presentation" : 1,
+									"presentation_rect" : [ 15.0, 255.0, 105.0, 21.0 ],
+									"text" : "initial positions"
+								}
+
+							}
+, 							{
+								"box" : 								{
 									"args" : [ "layer3" ],
 									"clickthrough" : 1,
 									"id" : "obj-6",
@@ -1227,9 +1260,9 @@
 									"name" : "jmod.tml.flow%.ui.panel.maxpat",
 									"numinlets" : 0,
 									"numoutlets" : 0,
-									"patching_rect" : [ 570.0, 120.0, 135.0, 240.0 ],
+									"patching_rect" : [ 570.0, 120.0, 135.0, 270.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 510.0, 15.0, 135.0, 240.0 ]
+									"presentation_rect" : [ 525.0, 15.0, 135.0, 270.0 ]
 								}
 
 							}
@@ -1243,9 +1276,9 @@
 									"name" : "jmod.tml.flow%.ui.panel.maxpat",
 									"numinlets" : 0,
 									"numoutlets" : 0,
-									"patching_rect" : [ 420.0, 120.0, 135.0, 240.0 ],
+									"patching_rect" : [ 420.0, 120.0, 135.0, 270.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 375.0, 15.0, 135.0, 240.0 ]
+									"presentation_rect" : [ 390.0, 15.0, 135.0, 270.0 ]
 								}
 
 							}
@@ -1259,9 +1292,9 @@
 									"name" : "jmod.tml.flow%.ui.panel.maxpat",
 									"numinlets" : 0,
 									"numoutlets" : 0,
-									"patching_rect" : [ 270.0, 120.0, 135.0, 240.0 ],
+									"patching_rect" : [ 270.0, 120.0, 135.0, 270.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 240.0, 15.0, 135.0, 240.0 ]
+									"presentation_rect" : [ 255.0, 15.0, 135.0, 270.0 ]
 								}
 
 							}
@@ -1270,13 +1303,14 @@
 									"args" : [ "layer0" ],
 									"clickthrough" : 1,
 									"id" : "obj-1",
+									"lockeddragscroll" : 1,
 									"maxclass" : "bpatcher",
 									"name" : "jmod.tml.flow%.ui.panel.maxpat",
 									"numinlets" : 0,
 									"numoutlets" : 0,
-									"patching_rect" : [ 120.0, 120.0, 135.0, 240.0 ],
+									"patching_rect" : [ 120.0, 120.0, 135.0, 270.0 ],
 									"presentation" : 1,
-									"presentation_rect" : [ 105.0, 15.0, 135.0, 240.0 ]
+									"presentation_rect" : [ 120.0, 15.0, 135.0, 270.0 ]
 								}
 
 							}
@@ -1402,7 +1436,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 195.0, 30.0, 357.0, 29.0 ],
-									"text" : "window size 400 200 1100 700, window flags nogrow, window exec, savewindow 1"
+									"text" : "window size 0 45 675 330, window flags nogrow, window exec, gridonopen 1"
 								}
 
 							}
@@ -1419,8 +1453,9 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 0,
-											"revision" : 7
+											"minor" : 1,
+											"revision" : 3,
+											"architecture" : "x86"
 										}
 ,
 										"rect" : [ 840.0, 548.0, 600.0, 426.0 ],
@@ -1552,7 +1587,7 @@
 									"numoutlets" : 2,
 									"outlettype" : [ "", "" ],
 									"patching_rect" : [ 15.0, 90.0, 65.0, 19.0 ],
-									"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 798, 119, 2478, 1023, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "nogrow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", -6, 44, 669, 329, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 									"text" : "thispatcher"
 								}
 
@@ -2635,6 +2670,15 @@
 					"hidden" : 0,
 					"midpoints" : [ 174.5, 1126.0, 158.0, 1126.0, 158.0, 1048.0, 174.5, 1048.0 ],
 					"source" : [ "obj-69", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-37", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-7", 0 ]
 				}
 
 			}
