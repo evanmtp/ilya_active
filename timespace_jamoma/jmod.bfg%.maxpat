@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 516.0, 44.0, 1316.0, 809.0 ],
+		"rect" : [ 245.0, 44.0, 1316.0, 809.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -155,8 +155,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 445.0, 615.0, 604.0, 31.0 ],
-					"text" : "jcom.parameter updaterate @type integer @range/bounds 1 100 @range/clipmode low @description \"Update rate in milliseconds\" @dataspace time @dataspace/unit/active ms @dataspace/unit/native ms @dataspace/unit/display ms",
+					"patching_rect" : [ 445.0, 615.0, 603.0, 31.0 ],
+					"text" : "jcom.parameter updaterate @type integer @range/bounds 1 100 @range/clipmode low @description \"Update rate in milliseconds\"",
 					"varname" : "camera/camera[2]"
 				}
 
@@ -232,8 +232,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 630.0, 530.0, 451.0, 19.0 ],
-					"text" : "jcom.parameter weight @type array @range/clipmode none @description \"Set weight.\"",
+					"patching_rect" : [ 630.0, 530.0, 491.0, 19.0 ],
+					"text" : "jcom.parameter weight @type decimalArray @range/clipmode none @description \"Set weight.\"",
 					"varname" : "origin[3]"
 				}
 
@@ -309,8 +309,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 630.0, 430.0, 435.0, 19.0 ],
-					"text" : "jcom.parameter scale @type array @range/clipmode none @description \"Set scale.\"",
+					"patching_rect" : [ 630.0, 430.0, 474.0, 19.0 ],
+					"text" : "jcom.parameter scale @type decimalArray @range/clipmode none @description \"Set scale.\"",
 					"varname" : "origin[2]"
 				}
 
@@ -420,8 +420,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 630.0, 330.0, 441.0, 19.0 ],
-					"text" : "jcom.parameter offset @type array @range/clipmode none @description \"Set offset.\"",
+					"patching_rect" : [ 630.0, 330.0, 480.0, 19.0 ],
+					"text" : "jcom.parameter offset @type decimalArray @range/clipmode none @description \"Set offset.\"",
 					"varname" : "origin[1]"
 				}
 
@@ -485,20 +485,6 @@
 					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 435.0, 220.0, 154.0, 19.0 ],
 					"text" : "jcom.list2parameter 3"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Verdana",
-					"fontsize" : 10.0,
-					"id" : "obj-17",
-					"maxclass" : "newobj",
-					"numinlets" : 0,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 95.0, 105.0, 124.0, 19.0 ],
-					"text" : "jcom.parameterCreate"
 				}
 
 			}
@@ -600,8 +586,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 625.0, 135.0, 421.0, 19.0 ],
-					"text" : "jcom.parameter dim @type array @ramp/drive none @description \"Image size\"",
+					"patching_rect" : [ 625.0, 135.0, 451.0, 19.0 ],
+					"text" : "jcom.parameter dim @type decimalArray @ramp/drive none @description \"Image size\"",
 					"varname" : "dim"
 				}
 
@@ -809,8 +795,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 625.0, 220.0, 441.0, 19.0 ],
-					"text" : "jcom.parameter origin @type array @range/clipmode none @description \"Set origin.\"",
+					"patching_rect" : [ 625.0, 220.0, 481.0, 19.0 ],
+					"text" : "jcom.parameter origin @type decimalArray @range/clipmode none @description \"Set origin.\"",
 					"varname" : "origin"
 				}
 
@@ -840,15 +826,6 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-16", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"disabled" : 0,
-					"hidden" : 0,
-					"source" : [ "obj-17", 0 ]
 				}
 
 			}
