@@ -92,11 +92,11 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Iniitial positions for layer0",
+					"annotation" : "Iniitial positions for layer3",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-2",
-					"items" : [ "none", ",", "noise", ",", "normal", "grid", ",", "figure" ],
+					"items" : [ "noise", ",", "normal", "grid" ],
 					"maxclass" : "umenu",
 					"numinlets" : 1,
 					"numoutlets" : 3,
@@ -118,7 +118,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 225.0, 705.0, 920.0, 19.0 ],
-					"text" : "jcom.parameter #1/initialPositions @type integer @range/bounds 1. 3. @range/clipmode both @repetitions/allow 1 @ramp/drive none @description Iniitial positions for #1",
+					"text" : "jcom.parameter #1/initialPositions @type integer @range/bounds 0. 1. @range/clipmode none @repetitions/allow 1 @ramp/drive none @description Iniitial positions for #1",
 					"varname" : "layer0/initialPositions"
 				}
 
@@ -256,7 +256,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets point size for mesh layer layer0",
+					"annotation" : "Sets point size for mesh layer3",
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-6",
@@ -528,7 +528,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Sets mesh drawing mode for layer0",
+					"annotation" : "Sets mesh drawing mode for layer3",
 					"fontname" : "Arial",
 					"fontsize" : 12.0,
 					"id" : "obj-107",
@@ -546,7 +546,7 @@
 			}
 , 			{
 				"box" : 				{
-					"annotation" : "Enable/disable layer0",
+					"annotation" : "Enable/disable layer3",
 					"id" : "obj-22",
 					"maxclass" : "toggle",
 					"numinlets" : 1,
