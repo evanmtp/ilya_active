@@ -73,6 +73,7 @@
 			}
 , 			{
 				"box" : 				{
+					"annotation" : "//gravity angle.",
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-74",
@@ -214,7 +215,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 255.0, 290.0, 17.0 ],
-					"text" : "/gravityAngle 4.541785"
+					"text" : "/velocityOutWidth 256"
 				}
 
 			}
@@ -275,7 +276,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "fluids visualization out (2 plane float32)",
 					"id" : "obj-163",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -862,14 +863,14 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 160.0, 290.0, 22.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "velocity field out (2 plane float32)",
 					"id" : "obj-6",
 					"maxclass" : "outlet",
 					"numinlets" : 1,
@@ -956,7 +957,7 @@
 							"architecture" : "x86"
 						}
 ,
-						"rect" : [ 0.0, 174.0, 930.0, 360.0 ],
+						"rect" : [ 222.0, 316.0, 930.0, 360.0 ],
 						"bgcolor" : [ 0.967391, 0.967391, 0.967391, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -1024,7 +1025,7 @@
 											"architecture" : "x86"
 										}
 ,
-										"rect" : [ 771.0, 241.0, 698.0, 399.0 ],
+										"rect" : [ 771.0, 241.0, 716.0, 648.0 ],
 										"bglocked" : 0,
 										"openinpresentation" : 0,
 										"default_fontsize" : 12.0,
@@ -1053,7 +1054,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 150.0, 30.0, 195.0, 33.0 ],
+													"patching_rect" : [ 150.0, 30.0, 195.0, 34.0 ],
 													"text" : "First draft: Oct. 27, 2013.\nNeeds revision (ideally by MF)."
 												}
 
@@ -1064,12 +1065,12 @@
 													"fontsize" : 12.0,
 													"frgb" : 0.0,
 													"id" : "obj-4",
-													"linecount" : 22,
+													"linecount" : 40,
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 15.0, 75.0, 667.0, 301.0 ],
-													"text" : "This panel allows you to colourize the distinct elements of the fluid simulation in different ways.\n\nThe fluid simulation generates three distinct \"fields\":\n\n-velocity:\n-pressure:\n-density:\n\nScale and Multiply (need a real explanation of what's going on)- like primary and secondary colourization of a given field\nTry setting them to distinct colours (e.g. set Scale as red and Multiply as green) to get a sense of the effect\n\nTo pass through the colours of the original video, set the colour to white. If the colour is set to black, that field will not be displayed. Any other colour will tint the field.\n\nIf saturation is turned down the tinting will be more subtle. Turning saturation up results in a more extreme tinting effect.\n\nUsing the vertical slider labeled \"scale,\" you can set a value by which the RGB colours coming from [swatch] are multiplied. The message boxes to the right of the slider will snap it to various values.\n\nSetting the slider to 0. results in a given field not being displayed. Setting it between 0. and 1. tend to keep colour values below the point of saturation/clipping, resulting in softer, more detailed output. At settings above 1., colour values tend to be pushed to the point of clipping, producing a less detailed, hard-edged psychedelic effect."
+													"patching_rect" : [ 15.0, 75.0, 667.0, 543.0 ],
+													"text" : "This panel allows you to colourize the elements of the fluid simulation.\n\nThe fluid simulation has three distinct [[qualities]] that can be individually colourized:\n\nVelocity: shows the rate of motion [[across the field]].\n e quickly will be given values that are further away from zero, while pixels where movement is slower will be given values closer to zero.\n\n[Ordinarily, this means that faster regions will be brighter and slower regions darker.]\n\nPressure: shows how much a given region is compressed due to movement.\n\nA region of bright pixels moving continuously through the input matrix (e.g., a waving hand) will create waves in the fluid. The regions in front of the wave will be more compressed, while those behind it will be more rarefied. Pixels where the force of compression is greater are assigned values that are further away from zero, while pixels where compression is lesser are given values that are nearer zero.\n\n[Ordinarily, this means regions under higher pressure will be brighter and regions where pressure is lower will be darker].\n\nDensity: []\n\nScale and Multiply (need a real explanation of what's going on)- like primary and secondary colourization of a given field\nTry setting them to distinct colours (e.g. set Scale as red and Multiply as green) to get a sense of the effect\n\nTo pass through the colours of the original video, set the colour to white. If the colour is set to black, that field will not be displayed. Any other colour will tint the field.\n\nIf saturation is turned down the tinting will be more subtle. Turning saturation up results in a more extreme tinting effect.\n\nUsing the vertical slider labeled \"scale,\" you can set a value by which the RGB colours coming from [swatch] are multiplied. The message boxes to the right of the slider will snap it to various values.\n\nSetting the slider to 0. results in a given field not being displayed. Setting it between 0. and 1. tend to keep colour values below the point of saturation/clipping, resulting in softer, more detailed output. At settings above 1., colour values tend to be pushed to the point of clipping, producing a less detailed, hard-edged psychedelic effect.\n\nInversion (negative values):\nIn order for anything to be visible when using a [[negative-scaled]] colour, you must have at least two elements of the colourizer turned on, and one of these must have a positive value. In other words, you must have something visible (positive-valued) to subtract your negative-scaled colour from."
 												}
 
 											}

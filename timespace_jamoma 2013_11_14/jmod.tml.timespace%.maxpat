@@ -480,13 +480,12 @@
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
 					"id" : "obj-33",
-					"linecount" : 2,
 					"maxclass" : "newobj",
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "jit_matrix", "jit_matrix" ],
-					"patching_rect" : [ 110.0, 420.0, 95.0, 31.0 ],
-					"text" : "jalg.timespace_minimal%"
+					"patching_rect" : [ 110.0, 420.0, 125.0, 19.0 ],
+					"text" : "jalg.tml.timespace%"
 				}
 
 			}
@@ -542,7 +541,7 @@
 					"patching_rect" : [ 5.0, 5.0, 300.0, 70.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 0.0, 0.0, 300.0, 70.0 ],
-					"text" : "/myTimespace"
+					"text" : "/editing_this_module"
 				}
 
 			}
@@ -772,6 +771,46 @@
 					"source" : [ "obj-8", 0 ]
 				}
 
+			}
+ ],
+		"dependency_cache" : [ 			{
+				"name" : "jalg.tml.timespace%.maxpat",
+				"bootpath" : "/Users/aa/Downloads/ilya_active-master-1/timespace_jamoma 2",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "jcom.ui.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.hub.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jit.ys.timespace.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.oscroute.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.pass.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.in.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.out.mxo",
+				"type" : "iLaX"
+			}
+, 			{
+				"name" : "jcom.parameter.mxo",
+				"type" : "iLaX"
 			}
  ]
 	}

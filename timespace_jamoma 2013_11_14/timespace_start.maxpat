@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 424.0, 44.0, 1128.0, 986.0 ],
+		"rect" : [ 663.0, 44.0, 1128.0, 986.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -375,6 +375,7 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-5",
+					"int" : 1,
 					"maxclass" : "gswitch",
 					"numinlets" : 3,
 					"numoutlets" : 1,
@@ -560,7 +561,7 @@
 					"args" : [ "myTimespace" ],
 					"id" : "obj-1",
 					"maxclass" : "bpatcher",
-					"name" : "jmod.timespace_minimal%.maxpat",
+					"name" : "jmod.tml.timespace%.maxpat",
 					"numinlets" : 3,
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
@@ -603,7 +604,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 305.5, 559.5, 24.5, 559.5 ],
+					"midpoints" : [ 305.5, 555.0, 24.5, 555.0 ],
 					"source" : [ "obj-1", 1 ]
 				}
 
@@ -678,7 +679,7 @@
 					"destination" : [ "obj-1", 2 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 305.5, 93.0, 328.5, 93.0, 328.5, 230.0, 305.5, 230.0 ],
+					"midpoints" : [ 305.5, 91.0, 329.5, 91.0, 329.5, 365.0, 305.5, 365.0 ],
 					"source" : [ "obj-4", 1 ]
 				}
 
@@ -697,7 +698,6 @@
 					"destination" : [ "obj-1", 1 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 159.5, 360.5, 165.0, 360.5 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -733,71 +733,71 @@
  ],
 		"dependency_cache" : [ 			{
 				"name" : "jmod.input%.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.thru.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/thru",
-				"patcherrelativepath" : "../../../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/thru",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/library/components/thru",
+				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/library/components/thru",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.input%.ui.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
-				"patcherrelativepath" : "../../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/input%",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
+				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/modules/video/input%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.rgb2gray%.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/modules/video/rgb2gray%",
-				"patcherrelativepath" : "../../../../../../../Applications/Max6/Cycling '74/Jamoma/modules/video/rgb2gray%",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/modules/video/rgb2gray%",
+				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/modules/video/rgb2gray%",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jmod.timespace_minimal%.maxpat",
-				"bootpath" : "/Users/admin/Documents/EVAN/Git/ilya_active/timespace_jamoma",
+				"name" : "jmod.tml.timespace%.maxpat",
+				"bootpath" : "/Users/aa/Downloads/ilya_active-master-1/timespace_jamoma 2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "jalg.timespace_minimal%.maxpat",
-				"bootpath" : "/Users/admin/Documents/EVAN/Git/ilya_active/timespace_jamoma",
+				"name" : "jalg.tml.timespace%.maxpat",
+				"bootpath" : "/Users/aa/Downloads/ilya_active-master-1/timespace_jamoma 2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jmod.bfg%.maxpat",
-				"bootpath" : "/Users/admin/Documents/EVAN/Git/ilya_active/timespace_jamoma",
+				"bootpath" : "/Users/aa/Downloads/ilya_active-master-1/timespace_jamoma 2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jalg.bfg%.maxpat",
-				"bootpath" : "/Users/admin/Documents/EVAN/Git/ilya_active/timespace_jamoma",
+				"bootpath" : "/Users/aa/Downloads/ilya_active-master-1/timespace_jamoma 2",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "jcom.list2parameter.maxpat",
-				"bootpath" : "/Applications/Max6/Cycling '74/Jamoma/library/components/list2parameter",
-				"patcherrelativepath" : "../../../../../../../Applications/Max6/Cycling '74/Jamoma/library/components/list2parameter",
+				"bootpath" : "/Applications/Max 6.1/Cycling '74/Jamoma/library/components/list2parameter",
+				"patcherrelativepath" : "../../../../../Applications/Max 6.1/Cycling '74/Jamoma/library/components/list2parameter",
 				"type" : "JSON",
 				"implicit" : 1
 			}
