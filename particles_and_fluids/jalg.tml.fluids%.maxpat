@@ -3,12 +3,11 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 3,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 7
 		}
 ,
-		"rect" : [ 20.0, 44.0, 1032.0, 706.0 ],
+		"rect" : [ 423.0, 186.0, 1032.0, 706.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -107,10 +106,10 @@
 					"linecount" : 3,
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 19,
-					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
+					"numoutlets" : 21,
+					"outlettype" : [ "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "", "" ],
 					"patching_rect" : [ 60.0, 90.0, 593.0, 47.0 ],
-					"text" : "jcom.pass /viscosity /vorticity /temperatureMagnitude /gravityAngle /gravityMagnitude /timestep /densityBlend /velocityBlend /velocityOutWidth /velocityOutHeight /velocityMultiply /velocityScale /pressureMultiply /pressureScale /densityScale /velocityIMultiply /velocityIScale /pressureIMultiply"
+					"text" : "jcom.pass /viscosity /vorticity /temperatureMagnitude /gravityAngle /gravityMagnitude /timestep /densityBlend /velocityBlend /velocityOutWidth /velocityOutHeight /velocityMultiply /velocityScale /pressureMultiply /pressureScale /densityScale /velocityIMultiply /velocityIScale /pressureIMultiply /velocityFade /densityFade"
 				}
 
 			}
@@ -420,7 +419,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 3,
 					"outlettype" : [ "jit_matrix", "jit_matrix", "" ],
-					"patching_rect" : [ 15.0, 615.0, 78.0, 20.0 ],
+					"patching_rect" : [ 15.0, 630.0, 78.0, 20.0 ],
 					"text" : "tml.jit.fluid2"
 				}
 
@@ -623,7 +622,27 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 611.611084, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 614.799988, 150.5, 24.5, 150.5 ],
+					"source" : [ "obj-3", 19 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 586.099976, 150.5, 24.5, 150.5 ],
+					"source" : [ "obj-3", 18 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"midpoints" : [ 557.400024, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 17 ]
 				}
 
@@ -633,7 +652,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 579.722229, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 528.700012, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 16 ]
 				}
 
@@ -643,7 +662,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 547.833313, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 500.0, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 15 ]
 				}
 
@@ -653,7 +672,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 515.944458, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 471.299988, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 14 ]
 				}
 
@@ -663,7 +682,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 484.055542, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 442.600006, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 13 ]
 				}
 
@@ -673,7 +692,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 452.166656, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 413.899994, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 12 ]
 				}
 
@@ -683,7 +702,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 420.277771, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 385.200012, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 11 ]
 				}
 
@@ -693,7 +712,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 388.388885, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 356.5, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 10 ]
 				}
 
@@ -703,7 +722,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 356.5, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 327.799988, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 9 ]
 				}
 
@@ -713,7 +732,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 324.611115, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 299.100006, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 8 ]
 				}
 
@@ -723,7 +742,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 292.722229, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 270.399994, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 7 ]
 				}
 
@@ -733,7 +752,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 260.833344, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 241.699997, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 6 ]
 				}
 
@@ -743,7 +762,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 228.944443, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 213.0, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 5 ]
 				}
 
@@ -753,7 +772,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 197.055557, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 184.300003, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 4 ]
 				}
 
@@ -763,7 +782,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 165.166672, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 155.600006, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 3 ]
 				}
 
@@ -773,7 +792,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 133.277771, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 126.900002, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 2 ]
 				}
 
@@ -783,7 +802,7 @@
 					"destination" : [ "obj-2", 0 ],
 					"disabled" : 0,
 					"hidden" : 0,
-					"midpoints" : [ 101.388885, 150.0, 24.5, 150.0 ],
+					"midpoints" : [ 98.199997, 150.0, 24.5, 150.0 ],
 					"source" : [ "obj-3", 1 ]
 				}
 

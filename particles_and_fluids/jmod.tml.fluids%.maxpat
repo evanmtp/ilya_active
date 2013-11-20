@@ -3,12 +3,11 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 6,
-			"minor" : 1,
-			"revision" : 3,
-			"architecture" : "x86"
+			"minor" : 0,
+			"revision" : 7
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 0.0, -148.0, 1280.0, 706.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -16,7 +15,7 @@
 		"default_fontface" : 0,
 		"default_fontname" : "Verdana",
 		"gridonopen" : 0,
-		"gridsize" : [ 15.0, 15.0 ],
+		"gridsize" : [ 5.0, 5.0 ],
 		"gridsnaponopen" : 0,
 		"statusbarvisible" : 2,
 		"toolbarvisible" : 1,
@@ -29,6 +28,104 @@
 		"digest" : "",
 		"tags" : "",
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-3",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 360.0, 1290.0, 105.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 240.0, 105.0, 19.0 ],
+					"text" : "velocityFade"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"frgb" : 0.0,
+					"id" : "obj-17",
+					"maxclass" : "comment",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 360.0, 1245.0, 105.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 5.0, 220.0, 105.0, 19.0 ],
+					"text" : "densityFade"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "//velocity blend.",
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-18",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 525.0, 1290.0, 50.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 145.0, 240.0, 50.0, 19.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-29",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 585.0, 1290.0, 577.0, 31.0 ],
+					"text" : "jcom.parameter velocityFade @type decimal @range/clipmode both @range/bounds 0. 1. @repetitions/allow 0 @ramp/drive none @description \"//velocity blend.\"",
+					"varname" : "viscosity[8]"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"annotation" : "//density blend.",
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-30",
+					"maxclass" : "flonum",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "float", "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 525.0, 1245.0, 50.0, 19.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 145.0, 220.0, 50.0, 19.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Verdana",
+					"fontsize" : 10.0,
+					"id" : "obj-50",
+					"linecount" : 2,
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 585.0, 1245.0, 572.0, 31.0 ],
+					"text" : "jcom.parameter densityFade @type decimal @range/clipmode none @range/bounds 0. 1. @repetitions/allow 0 @ramp/drive none @description \"//density blend.\"",
+					"varname" : "viscosity[9]"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Verdana",
 					"fontsize" : 10.0,
@@ -215,7 +312,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 255.0, 290.0, 17.0 ],
-					"text" : "/velocityOutWidth 256"
+					"text" : "/preset/dump"
 				}
 
 			}
@@ -228,7 +325,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 390.0, 1385.0, 20.0, 20.0 ]
+					"patching_rect" : [ 390.0, 1535.0, 20.0, 20.0 ]
 				}
 
 			}
@@ -243,9 +340,9 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "int" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 390.0, 1350.0, 100.0, 20.0 ],
+					"patching_rect" : [ 390.0, 1500.0, 100.0, 20.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 15.0, 260.0, 270.0, 15.0 ],
+					"presentation_rect" : [ 15.0, 300.0, 270.0, 15.0 ],
 					"text" : "reset"
 				}
 
@@ -294,9 +391,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 1290.0, 105.0, 19.0 ],
+					"patching_rect" : [ 360.0, 1440.0, 105.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 240.0, 105.0, 19.0 ],
+					"presentation_rect" : [ 5.0, 280.0, 105.0, 19.0 ],
 					"text" : "velocityOutHeight"
 				}
 
@@ -310,9 +407,9 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 360.0, 1245.0, 105.0, 19.0 ],
+					"patching_rect" : [ 360.0, 1395.0, 105.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 5.0, 220.0, 105.0, 19.0 ],
+					"presentation_rect" : [ 5.0, 260.0, 105.0, 19.0 ],
 					"text" : "velocityOutWidth"
 				}
 
@@ -472,9 +569,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 525.0, 1290.0, 50.0, 19.0 ],
+					"patching_rect" : [ 525.0, 1440.0, 50.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 145.0, 240.0, 50.0, 19.0 ]
+					"presentation_rect" : [ 145.0, 280.0, 50.0, 19.0 ]
 				}
 
 			}
@@ -488,7 +585,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 585.0, 1290.0, 510.0, 31.0 ],
+					"patching_rect" : [ 585.0, 1440.0, 510.0, 31.0 ],
 					"text" : "jcom.parameter velocityOutHeight @type integer @range/clipmode none @range/bounds 0. 1000. @repetitions/allow 0 @ramp/drive none @description \"//velocity out height.\"",
 					"varname" : "velocityOutWidth[1]"
 				}
@@ -505,9 +602,9 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "int", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 525.0, 1245.0, 50.0, 19.0 ],
+					"patching_rect" : [ 525.0, 1395.0, 50.0, 19.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 145.0, 220.0, 50.0, 19.0 ]
+					"presentation_rect" : [ 145.0, 260.0, 50.0, 19.0 ]
 				}
 
 			}
@@ -604,8 +701,8 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 585.0, 1110.0, 461.0, 31.0 ],
-					"text" : "jcom.parameter timestep @type decimal @range/clipmode both @range/bounds -1. 10. @repetitions/allow 0 @ramp/drive none @description \"//time step.\"",
+					"patching_rect" : [ 585.0, 1110.0, 567.0, 31.0 ],
+					"text" : "jcom.parameter timestep @type decimal @range/clipmode none @range/bounds -1. 10. @repetitions/allow 0 @ramp/drive none @description \"//time step.\"",
 					"varname" : "viscosity[5]"
 				}
 
@@ -952,12 +1049,11 @@
 						"fileversion" : 1,
 						"appversion" : 						{
 							"major" : 6,
-							"minor" : 1,
-							"revision" : 3,
-							"architecture" : "x86"
+							"minor" : 0,
+							"revision" : 7
 						}
 ,
-						"rect" : [ 222.0, 316.0, 930.0, 360.0 ],
+						"rect" : [ 272.0, 368.0, 930.0, 360.0 ],
 						"bgcolor" : [ 0.967391, 0.967391, 0.967391, 1.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
@@ -977,6 +1073,7 @@
 						"description" : "",
 						"digest" : "",
 						"tags" : "",
+						"visible" : 1,
 						"boxes" : [ 							{
 								"box" : 								{
 									"background" : 0,
@@ -997,8 +1094,7 @@
 									"presentation" : 0,
 									"presentation_rect" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"text" : "front",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textjustification" : 0
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1020,9 +1116,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 1,
-											"revision" : 3,
-											"architecture" : "x86"
+											"minor" : 0,
+											"revision" : 7
 										}
 ,
 										"rect" : [ 771.0, 241.0, 716.0, 648.0 ],
@@ -1054,7 +1149,7 @@
 													"maxclass" : "comment",
 													"numinlets" : 1,
 													"numoutlets" : 0,
-													"patching_rect" : [ 150.0, 30.0, 195.0, 34.0 ],
+													"patching_rect" : [ 150.0, 30.0, 195.0, 33.0 ],
 													"text" : "First draft: Oct. 27, 2013.\nNeeds revision (ideally by MF)."
 												}
 
@@ -1133,8 +1228,7 @@
 									}
 ,
 									"text" : "p fluids_colour_help",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textjustification" : 0
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1158,8 +1252,7 @@
 									"presentation" : 1,
 									"presentation_rect" : [ 825.0, 15.0, 75.0, 34.0 ],
 									"text" : "help?",
-									"textcolor" : [ 0.842391, 0.842391, 0.842391, 1.0 ],
-									"textjustification" : 0
+									"textcolor" : [ 0.842391, 0.842391, 0.842391, 1.0 ]
 								}
 
 							}
@@ -1186,7 +1279,6 @@
 									"presentation_rect" : [ 15.0, 15.0, 210.0, 36.0 ],
 									"text" : "Fluids Colourizer",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textjustification" : 0,
 									"underline" : 0
 								}
 
@@ -1428,8 +1520,7 @@
 									"presentation" : 0,
 									"presentation_rect" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"text" : "window flags grow, window exec",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textjustification" : 0
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1453,8 +1544,7 @@
 									"presentation" : 0,
 									"presentation_rect" : [ 0.0, 0.0, 0.0, 0.0 ],
 									"text" : "window size 0 45 930 405, window flags grow, window exec, savewindow 1",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textjustification" : 0
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1477,9 +1567,8 @@
 										"fileversion" : 1,
 										"appversion" : 										{
 											"major" : 6,
-											"minor" : 1,
-											"revision" : 3,
-											"architecture" : "x86"
+											"minor" : 0,
+											"revision" : 7
 										}
 ,
 										"rect" : [ 840.0, 548.0, 600.0, 426.0 ],
@@ -1600,8 +1689,7 @@
 									}
 ,
 									"text" : "p front",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textjustification" : 0
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1623,10 +1711,9 @@
 									"patching_rect" : [ 15.0, 75.0, 65.0, 19.0 ],
 									"presentation" : 0,
 									"presentation_rect" : [ 0.0, 0.0, 0.0, 0.0 ],
-									"save" : [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 272, 368, 1202, 728, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 									"text" : "thispatcher",
-									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-									"textjustification" : 0
+									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ]
 								}
 
 							}
@@ -1825,7 +1912,7 @@
 					"outlettype" : [ "" ],
 					"prefix" : "video",
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 300.0, 280.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 300.0, 350.0 ],
 					"text" : "/myFluids"
 				}
 
@@ -1856,7 +1943,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 585.0, 1245.0, 465.0, 31.0 ],
+					"patching_rect" : [ 585.0, 1395.0, 465.0, 31.0 ],
 					"text" : "jcom.parameter velocityOutWidth @type integer @range/clipmode none @range/bounds 0. 1000. @repetitions/allow 0 @ramp/drive none @description \"//velocity out width.\"",
 					"varname" : "velocityOutWidth"
 				}
@@ -1871,7 +1958,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 570.0, 1350.0, 564.0, 19.0 ],
+					"patching_rect" : [ 570.0, 1500.0, 564.0, 19.0 ],
 					"text" : "jcom.parameter reset @type generic @range/clipmode none @repetitions/allow 0 @description \"Reset fluids.\"",
 					"varname" : "reset"
 				}
@@ -1956,6 +2043,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-166", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-18", 0 ]
 				}
 
 			}
@@ -2055,6 +2151,24 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-28", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-18", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-29", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-50", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-30", 0 ]
 				}
 
 			}
@@ -2226,6 +2340,15 @@
 					"disabled" : 0,
 					"hidden" : 0,
 					"source" : [ "obj-5", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"disabled" : 0,
+					"hidden" : 0,
+					"source" : [ "obj-50", 0 ]
 				}
 
 			}
