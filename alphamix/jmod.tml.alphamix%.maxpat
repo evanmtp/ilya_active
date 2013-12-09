@@ -8,7 +8,7 @@
 			"architecture" : "x86"
 		}
 ,
-		"rect" : [ 0.0, 44.0, 1280.0, 706.0 ],
+		"rect" : [ 587.0, 247.0, 1280.0, 706.0 ],
 		"bgcolor" : [ 1.0, 1.0, 1.0, 0.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
@@ -714,60 +714,60 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in8",
 					"id" : "obj-94",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 345.0, 285.0, 22.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in7",
 					"id" : "obj-95",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 315.0, 285.0, 22.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in6",
 					"id" : "obj-91",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 285.0, 285.0, 22.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in5",
 					"id" : "obj-92",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 254.999985, 285.0, 22.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in4",
 					"id" : "obj-93",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 225.0, 285.0, 22.0, 22.0 ]
 				}
 
@@ -1056,30 +1056,30 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 75.0, 255.0, 290.0, 17.0 ],
-					"text" : "/blendmodesetall 4. 1."
+					"text" : "/view/highlight none"
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in3",
 					"id" : "obj-166",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 195.0, 285.0, 22.0, 22.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in2",
 					"id" : "obj-165",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 165.0, 285.0, 22.0, 22.0 ]
 				}
 
@@ -1211,12 +1211,12 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "in1",
 					"id" : "obj-7",
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "jit_matrix" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 135.0, 285.0, 22.0, 22.0 ]
 				}
 
@@ -2676,7 +2676,6 @@
 										"description" : "",
 										"digest" : "",
 										"tags" : "",
-										"visible" : 1,
 										"boxes" : [ 											{
 												"box" : 												{
 													"fontname" : "Arial",
@@ -3044,7 +3043,7 @@
 									"patching_rect" : [ 15.0, 75.0, 65.0, 19.0 ],
 									"presentation" : 0,
 									"presentation_rect" : [ 0.0, 0.0, 0.0, 0.0 ],
-									"save" : [ "#N", "thispatcher", ";", "#Q", "window", "flags", "grow", "close", "zoom", "nofloat", "menu", "minimize", ";", "#Q", "window", "constrain", 50, 50, 32768, 32768, ";", "#Q", "window", "size", 0, 45, 120, 335, ";", "#Q", "window", "title", ";", "#Q", "window", "exec", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
+									"save" : [ "#N", "thispatcher", ";", "#Q", "savewindow", 1, ";", "#Q", "end", ";" ],
 									"text" : "thispatcher",
 									"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 									"textjustification" : 0
@@ -3919,7 +3918,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "message",
+					"comment" : "osc_messages",
 					"id" : "obj-38",
 					"maxclass" : "inlet",
 					"numinlets" : 0,

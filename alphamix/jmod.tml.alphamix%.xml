@@ -6,32 +6,32 @@
 >
   <preset number='1' name='default'>
     <item name='blendmodesetall' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='destination' type='string' priority='0' mixweight='1'>rendertest</item>
+    <item name='destination' type='string' priority='0' mixweight='1'>test</item>
     <item name='floating' type='generic' priority='0' mixweight='1'>1</item>
     <item name='fullscreen' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer1/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
     <item name='layer1/enable' type='generic' priority='0' mixweight='1'>1</item>
     <item name='layer1/level' type='decimal' priority='0' mixweight='1'>0.679245</item>
     <item name='layer2/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='layer2/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer2/enable' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer2/level' type='decimal' priority='0' mixweight='1'>0.716981</item>
     <item name='layer3/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='layer3/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer3/enable' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer3/level' type='decimal' priority='0' mixweight='1'>0.660377</item>
     <item name='layer4/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='layer4/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer4/enable' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer4/level' type='decimal' priority='0' mixweight='1'>0.660377</item>
     <item name='layer5/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='layer5/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer5/enable' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer5/level' type='decimal' priority='0' mixweight='1'>0.698113</item>
     <item name='layer6/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='layer6/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer6/enable' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer6/level' type='decimal' priority='0' mixweight='1'>0.698113</item>
     <item name='layer7/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='layer7/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer7/enable' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer7/level' type='decimal' priority='0' mixweight='1'>0.698113</item>
     <item name='layer8/blendmode' type='array' priority='0' mixweight='1'>6.000000 2.000000 </item>
-    <item name='layer8/enable' type='generic' priority='0' mixweight='1'>1</item>
+    <item name='layer8/enable' type='generic' priority='0' mixweight='1'>0</item>
     <item name='layer8/level' type='decimal' priority='0' mixweight='1'>0.698113</item>
     <item name='onOff' type='generic' priority='0' mixweight='1'>1</item>
     <item name='video/bypass' type='boolean' priority='0' mixweight='1'>0</item>
